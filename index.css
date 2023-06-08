@@ -1,0 +1,48 @@
+*{
+ margin: 0;
+ padding: 0; 
+ box-sizing: border-box;  
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+.container .progress-container{
+    margin-bottom: 25px;
+
+}
+
+.container .progress-container h4{
+    margin: 0 0 15px 15px;
+    letter-spacing: .5px;
+}
+
+.container .progress-container .progress-bar{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 3px 4px 5px 0px rgba(204, 185, 185,  .75);
+}
+
+.container .progress-container .progress-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(76,175,80,1) 50%, rgba(50,222,132,1)100%);
+    transition: width .5s linear;
+}
